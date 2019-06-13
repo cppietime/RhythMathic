@@ -57,6 +57,11 @@ typedef struct __attribute__((__packed__)) _dibh_info_v3{
 }
 
 int readBMPHeader(FILE*, bmp_header*, dibh_core**);
+void* readBMPData(FILE*, bmp_header*, dibh_core*);
+uint32_t* readBMPTable(FILE*, bmp_header*, dibh_core*);
+uint32_t* getBMPRGBA(dibh_core*,void*,uint32_t*);
+void* putBMPRGBA(dibh_core*,uint32_t*,uint32_t*);
 
+int writeBMPFile(FILE*, bmp_header*, dibh_core*, uint32_t*, void*);
 
 #endif
