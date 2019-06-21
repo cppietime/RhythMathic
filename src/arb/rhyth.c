@@ -379,7 +379,7 @@ void rmp_mul(rmp_t* dst, rmp_t* a, rmp_t* b){
     rmp_trim(dst);
 }
 
-int main(int argc, char** argv){
+int xmain(int argc, char** argv){
     double da = 5, db = 2.4;
     if(argc>2){
         da = atof(argv[1]);

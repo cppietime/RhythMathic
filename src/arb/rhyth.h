@@ -28,8 +28,7 @@ void rmp_sub(rmp_t*,rmp_t*,rmp_t*);
 int rmp_err();
 void rmp_err_clear();
 
-void rmp_muln(uint32_t*,uint32_t*,uint32_t*,uint32_t);
-void rmp_mulk(uint32_t*,uint32_t*,uint32_t*,uint32_t);
+void rmp_mul(rmp_t*,rmp_t*,rmp_t*);
 
 
 #endif
